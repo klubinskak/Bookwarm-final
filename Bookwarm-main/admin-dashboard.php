@@ -35,7 +35,7 @@ if (isset($_SESSION['userID'])) {
   <nav class="navbar fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
       <a href="admin-dashboard.php" class="navbar-brand logo py-2">BOOKWARM</a>
-      <form class="d-flex ms-auto mx-3">
+      <form class="d-flex ms-auto my-2 mx-3">
         <!--search-->
         <input class="form-control" type="search" placeholder="Search books.." id="search-box" aria-label="Search">
         <button class="btn btn-light" id="search" type="button"><i class="bi bi-search"></i></button>
@@ -121,32 +121,17 @@ if (isset($_SESSION['userID'])) {
     <!--first card-->
     <div class="d-flex justify-content-around">
       <div class="card my-4" style="width: 18rem;">
-        <img class="imgs mx-auto thumbnail" id="first-img" src="..." alt="Card image cap" style="width:170px; height:230px;">
-        <div class="card-body ">
-          <h5 class="card-title" id="first-title"></h5>
-          <a href="#" class="btn btn-dark">Add</a>
-          <a href="#" class="btn btn-dark">Review</a>
-          <a href="#" class="btn btn-dark">Read</a>
+        <div class="card-body " id="card-body">
         </div>
       </div>
       <!--scd card-->
       <div class="card my-4" style="width: 18rem;">
-        <img class="card-img-top imgs mx-auto thumbnail" id="second-img" src="..." alt="Card image cap" style="width:170px; height:230px;">
-        <div class="card-body">
-          <h5 class="card-title" id="second-title">Card title</h5>
-          <a href="#" class="btn btn-dark ">Add</a>
-          <a href="#" class="btn btn-dark">Review</a>
-          <a href="#" class="btn btn-dark">Read</a>
+        <div class="card-body" id="second-card">
         </div>
       </div>
       <!--third card-->
       <div class="card my-4" style="width: 18rem;">
-        <img class="card-img-top imgs mx-auto thumbnail" id="third-img" src="..." alt="Card image cap" style="width:170px; height:230px;">
-        <div class="card-body">
-          <h5 class="card-title" id="third-title">Card title</h5>
-          <a href="#" class="btn btn-dark">Add</a>
-          <a href="#" class="btn btn-dark">Review</a>
-          <a href="#" id="read" class="btn btn-dark">Read</a>
+        <div class="third-card" id="third-card">
         </div>
       </div>
     </div>
